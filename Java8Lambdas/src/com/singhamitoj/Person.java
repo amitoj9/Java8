@@ -1,6 +1,6 @@
 package com.singhamitoj;
 
-public class Person {
+public class Person implements Comparable<Person>{
 	
 	
 	private String firstName;
@@ -34,6 +34,11 @@ public class Person {
 	@Override
 	public String toString() {
 		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + "]";
+	}
+	@Override
+	public int compareTo(Person o) {
+		// TODO Auto-generated method stub
+		return firstName.compareTo(o.getFirstName());
 	}
 	
 

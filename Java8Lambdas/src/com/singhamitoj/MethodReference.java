@@ -14,8 +14,6 @@ public class MethodReference {
 //		With method reference calling static method 
 		Thread t2=new Thread( MethodReference::printMessage);
 		t2.start();
-		
-		
 		List<Person> people= Arrays.asList(
 				new Person("Amitoj","Singh",27),
 				new Person("Japneet","Singh",23),
